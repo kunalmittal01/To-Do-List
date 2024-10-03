@@ -1,0 +1,104 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  #root {
+    width: 40%;
+  }
+}
+
+.container {
+  width: 100%;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem ;
+}
+
+.head {
+  font-size: 1.8rem;
+}
+
+.input-field {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-field input {
+  width: 75%;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid rgba(128, 128, 128, 0.87);
+  padding: 5px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.input-field button {
+  border: none;
+  padding: 10px 20px  ;
+  background-color: rgb(160, 175, 204);
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: all 0.5s ease;
+  background-color: #06B6D4;
+}
+
+.output-field {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 15px;
+}
+
+.output-field .task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.output-field .task:hover {
+  background-color: #F1F1F1;
+}
+
+.output-field .task button {
+  color: white;
+  padding: 5px 10px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.output-field .task button:hover {
+  background-color: #861111;
+}
